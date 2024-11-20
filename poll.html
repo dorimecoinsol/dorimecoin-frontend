@@ -21,31 +21,38 @@
     <h1>Community Poll</h1>
   </header>
 
-  <section class="poll">
-    <h2>What is your favorite Dorime meme?</h2>
-    <form action="submit_poll.php" method="POST">
-      <label>
-        <input type="radio" name="meme" value="Ameno" required>
-        Ameno (The original song)
-      </label><br>
+  <section class="poll-container">
+    <div class="poll-box">
+      <h2>What is your favorite Dorime meme?</h2>
+      <form action="submit_poll.php" method="POST">
+        <div class="poll-option">
+          <label>
+            <input type="radio" name="meme" value="Ameno" required>
+            Ameno (The original song)
+          </label>
+        </div>
+        <div class="poll-option">
+          <label>
+            <input type="radio" name="meme" value="Dorime" required>
+            Dorime (The meme version)
+          </label>
+        </div>
+        <div class="poll-option">
+          <label>
+            <input type="radio" name="meme" value="Rat" required>
+            The Rat (DorimeCoin Mascot)
+          </label>
+        </div>
+        <div class="poll-option">
+          <label>
+            <input type="radio" name="meme" value="Other" required>
+            Other (Tell us your favorite!)
+          </label>
+        </div>
 
-      <label>
-        <input type="radio" name="meme" value="Dorime" required>
-        Dorime (The meme version)
-      </label><br>
-
-      <label>
-        <input type="radio" name="meme" value="Rat" required>
-        The Rat (DorimeCoin Mascot)
-      </label><br>
-
-      <label>
-        <input type="radio" name="meme" value="Other" required>
-        Other (Tell us your favorite!)
-      </label><br>
-
-      <button type="submit">Vote</button>
-    </form>
+        <button type="submit" class="poll-button">Vote</button>
+      </form>
+    </div>
   </section>
 
   <footer>

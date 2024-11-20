@@ -4,10 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DorimeCoin - The Sacred Memecoin</title>
+  <!-- Google Fonts for better typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
   <header>
+    <!-- Fixed navbar with shadow effect -->
     <nav class="navbar">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -18,36 +23,48 @@
         <li><a href="poll.html">Poll</a></li>
       </ul>
     </nav>
-    <h1>DorimeCoin</h1>
-    <p>The Sacred Memecoin of Legends</p>
+    <div class="hero-text">
+      <h1>DorimeCoin</h1>
+      <p>The Sacred Memecoin of Legends</p>
+    </div>
   </header>
 
+  <!-- Hero Section with Parallax effect -->
   <section class="hero">
-    <img src="https://via.placeholder.com/200" alt="DorimeCoin Mascot - Rat">
-    <h2>"Ameno Dorime, the coin of destiny"</h2>
-    <p>Join the meme revolution with the most divine cryptocurrency.</p>
-    <button class="buy">Buy Now</button>
-    <button class="learn">Learn More</button>
+    <div class="hero-content">
+      <img src="/images/dorime.jpg" alt="DorimeCoin Mascot - Rat" class="hero-img">
+      <h2>"Ameno Dorime, the coin of destiny"</h2>
+      <p>Join the meme revolution with the most divine cryptocurrency.</p>
+      <div class="hero-buttons">
+        <button class="buy"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+        <button class="learn"><i class="fas fa-info-circle"></i> Learn More</button>
+      </div>
+    </div>
   </section>
 
+  <!-- Live Price Section with animation -->
   <section class="live-price">
     <h2>Current DorimeCoin Price</h2>
-    <div id="price">Loading...</div>
+    <div id="price" class="price">Loading...</div>
   </section>
 
+  <!-- Features Section -->
   <section class="features">
     <h2>Why Choose DorimeCoin?</h2>
-    <p>- Inspired by the legendary meme.<br>
-       - A community-driven project.<br>
-       - Sacred and fun.</p>
+    <ul>
+      <li><i class="fas fa-check-circle"></i> Inspired by the legendary meme.</li>
+      <li><i class="fas fa-check-circle"></i> A community-driven project.</li>
+      <li><i class="fas fa-check-circle"></i> Sacred and fun.</li>
+    </ul>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2024 DorimeCoin. All Rights Reserved.</p>
   </footer>
 
+  <!-- Live Price Fetch Script -->
   <script>
-    // Fetch live price from CoinGecko
     async function fetchPrice() {
       try {
         const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=dorimecoin&vs_currencies=usd');
