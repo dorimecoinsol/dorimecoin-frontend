@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Poll - DorimeCoin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="tokenomics.html">Tokenomics</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="poll.html">Poll</a></li>
+      </ul>
+    </nav>
+    <h1>Community Poll</h1>
+  </header>
+
+  <section class="poll">
+    <h2>What is your favorite Dorime meme?</h2>
+    <form action="submit_poll.php" method="POST">
+      <label>
+        <input type="radio" name="meme" value="Ameno" required>
+        Ameno (The original song)
+      </label><br>
+
+      <label>
+        <input type="radio" name="meme" value="Dorime" required>
+        Dorime (The meme version)
+      </label><br>
+
+      <label>
+        <input type="radio" name="meme" value="Rat" required>
+        The Rat (DorimeCoin Mascot)
+      </label><br>
+
+      <label>
+        <input type="radio" name="meme" value="Other" required>
+        Other (Tell us your favorite!)
+      </label><br>
+
+      <button type="submit">Vote</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 DorimeCoin. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

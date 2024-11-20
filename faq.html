@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - DorimeCoin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="tokenomics.html">Tokenomics</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Frequently Asked Questions</h1>
+  </header>
+
+  <section class="faq">
+    <h2>Your Questions, Answered</h2>
+    <div class="faq-item">
+      <button class="faq-question">What is DorimeCoin?</button>
+      <div class="faq-answer">
+        <p>DorimeCoin is a memecoin inspired by the legendary Ameno Dorime meme. It's a community-driven cryptocurrency for fun and engagement!</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">How do I buy DorimeCoin?</button>
+      <div class="faq-answer">
+        <p>You can buy DorimeCoin on decentralized exchanges like Uniswap or PancakeSwap. Follow the "Buy Now" link on our homepage for detailed instructions.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Is DorimeCoin safe to invest in?</button>
+      <div class="faq-answer">
+        <p>As a memecoin, DorimeCoin is designed for entertainment and community building. Always do your own research before investing!</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">What is the roadmap for DorimeCoin?</button>
+      <div class="faq-answer">
+        <p>The roadmap includes community building, launching additional features, and expanding the meme universe. Check out the Roadmap section on the homepage for more details.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 DorimeCoin. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // FAQ toggle functionality
+    const faqItems = document.querySelectorAll('.faq-question');
+    faqItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const answer = item.nextElementSibling;
+        const isOpen = answer.style.display === 'block';
+        answer.style.display = isOpen ? 'none' : 'block';
+        item.classList.toggle('active', !isOpen);
+      });
+    });
+  </script>
+</body>
+</html>
